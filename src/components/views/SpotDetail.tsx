@@ -13,19 +13,19 @@ export const SpotDetail = ({ spot }: { spot: SpotType }) => {
       <div className={'mb-4 text-right'}>
         {dayjs(spot.date).format('YYYY/MM/DD')}
       </div>
-      <div className={'mb-12'}>
+      <figure className={'mb-12 display aspect-video bg-slate-200'}>
         <img
-          className={'w-full h-auto'}
+          className={'block aspect-video object-cover'}
           src={`/static/img/spots/mv-${spot.id}.jpg`}
           alt=''
         />
-      </div>
+      </figure>
       <MyMarkdown className={'markdown-body'}>{spot.body}</MyMarkdown>
 
-      <div className='text-center mt-8'>
+      <div className='text-center mt-16'>
         <a
           href={'/'}
-          className='btn btn-lg w-72 btn-primary btn-outline rounded-full'
+          className='btn text-lg w-72 btn-primary btn-outline rounded-full'
         >
           <span>一覧に戻る</span>
         </a>
