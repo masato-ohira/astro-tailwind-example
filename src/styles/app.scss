@@ -1,5 +1,6 @@
-@use './tailwind/components.scss' as *;
+@use './tailwind/vars.scss' as *;
 @use './tailwind/base.scss' as *;
+@use './tailwind/components.scss' as *;
 @use './tailwind/utilities.scss' as *;
 
 @tailwind base;

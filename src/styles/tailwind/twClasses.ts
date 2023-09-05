@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react'
-import { pxVw, spVw } from '../mixins/vw'
+// import { pxVw, spVw } from '../mixins/vw'
 
 export const twClasses: Record<string, CSSProperties> = {
   '.hstack': {},

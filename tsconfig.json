@@ -18,7 +18,8 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"],
-      "@@/*": ["./*"]
+      "@@/*": ["./*"],
+      "@ui/*": ["./src/components/shadcn-ui/ui/*"]
     },
     "jsxImportSource": "react",
     "importsNotUsedAsValues": "error"
