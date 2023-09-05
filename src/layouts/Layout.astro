@@ -1,27 +1,32 @@
 ---
-import { MyHeader } from '@/components/layouts/MyHeader'
-import { MyFooter } from '@/components/layouts/MyFooter'
-import '@/styles/tailwind.scss'
+import '@/styles/app.scss'
 
 export interface Props {
-  title: string
+  pageId: string
 }
 
-const { title } = Astro.props
+const { pageId } = Astro.props
+const isDev = process.env.NODE_ENV == 'development'
 ---
 
 <!DOCTYPE html>
 <html lang='ja'>
   <head>
-    <meta charset='UTF-8' />
-    <meta name='description' content='Astro description' />
+    <meta charset='utf-8' />
     <meta name='viewport' content='width=device-width' />
+    <meta name='format-detection' content='telephone=no' />
     <meta name='generator' content={Astro.generator} />
-    <title>{title}</title>
+
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap'
+      rel='stylesheet'
+    />
+
+    <title>AppName</title>
   </head>
   <body>
-    <MyHeader />
     <slot />
-    <MyFooter />
   </body>
 </html>

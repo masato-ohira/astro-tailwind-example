@@ -1,0 +1,25 @@
+@layer base {
+  html,
+  body {
+    // @apply font-body;
+    // @apply w-full max-w-full min-h-screen;
+    // @apply overflow-x-hidden;
+    // @apply tracking-wider leading-[1.8] text-lead-500;
+    // @apply font-feature-jp;
+
+    a {
+      // @apply text-lead-500;
+    }
+  }
+
+  @keyframes divFadeUp {
+    0% {
+      transform: translate3d(0, 40px, 0);
+      // opacity: 0;
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+      // opacity: 1;
+    }
+  }
+}

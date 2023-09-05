@@ -20,10 +20,8 @@
       "@/*": ["./src/*"],
       "@@/*": ["./*"]
     },
-    "jsxImportSource": "react",
-    "importsNotUsedAsValues": "error"
+    "jsxImportSource": "react"
   },
-
   "include": [
     "**/*.ts",
     "**/*.tsx",

@@ -1,10 +1,10 @@
 ---
-import { SpotList } from '@/components/views/SpotList'
+import { TopPage } from '@/components/views'
 import Layout from '@/layouts/Layout.astro'
+
+const isDev = process.env.NODE_ENV == 'development'
 ---
 
-<Layout title='サイトメンテナンスのお知らせ'>
-  <main>
-    <SpotList />
-  </main>
+<Layout pageId={'index'}>
+  <TopPage client:load />
 </Layout>

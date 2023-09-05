@@ -1,6 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./src/**/*.{js,jsx,ts,tsx,astro}'],
+
+const { typewindTransforms } = require('typewind/transform')
+
+module.exports = {
+  // prefix: 'tw-',
+  content: {
+    files: ['./src/**/*.{js,jsx,ts,tsx,astro}'],
+    transform: typewindTransforms,
+  },
   theme: {
     extend: {},
   },
