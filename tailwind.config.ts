@@ -11,6 +11,9 @@ export default {
   },
   theme: {
     extend: {},
+    container: {
+      center: true,
+    },
   },
   daisyui: {
     themes: [

@@ -19,5 +19,5 @@ export const createColors = (
 }
 
 export const colors = {
-  ...createColors('brand', '#0068B7'),
+  ...createColors('brand', '#329795'),
 }
