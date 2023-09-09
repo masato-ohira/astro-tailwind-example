@@ -1,5 +1,5 @@
 # my setting
-# dist/
+dist/
 .htaccess
 styled-system
 my-scripts/**/dist
