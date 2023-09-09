@@ -30,6 +30,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "colord": "^2.9.3",
+    "daisyui": "^3.7.3",
     "dayjs": "^1.11.9",
     "lodash-es": "^4.17.21",
     "lucide-react": "^0.274.0",

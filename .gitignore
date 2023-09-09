@@ -3,6 +3,7 @@
 .htaccess
 styled-system
 my-scripts/**/dist
+_bk
 
 # generated types
 .astro/
