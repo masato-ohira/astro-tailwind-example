@@ -13,6 +13,7 @@ export const TopPage = () => {
           //
           'container',
           'py-12',
+          'px-4',
         )}
       >
         {spots.map((i) => {

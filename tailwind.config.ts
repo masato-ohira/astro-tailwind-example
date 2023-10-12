@@ -39,7 +39,7 @@ export default {
     require('tailwindcss-animate'),
     plugin(function ({ addUtilities }) {
       addUtilities({
-        ...(twClasses as CSSRuleObject),
+        ...(twClasses() as CSSRuleObject),
       })
     }),
   ],

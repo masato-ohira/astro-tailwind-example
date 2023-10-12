@@ -1,20 +1,22 @@
-import type { CSSProperties } from 'react'
-// import { pxVw, spVw } from '../mixins/vw'
+import fs from 'fs-extra'
+import { zipObject } from 'lodash'
+const tailwindDir = `src/styles/tailwind`
 
-export const twClasses: Record<string, CSSProperties> = {
-  '.hstack': {},
-  '.center': {},
+// 使用しているCustomClass一覧を取得
+export const twClasses = () => {
+  const components = fs.readFileSync(`${tailwindDir}/components.scss`, 'utf-8')
+  const utils = fs.readFileSync(`${tailwindDir}/utilities.scss`, 'utf-8')
+  const regex = /\.([a-zA-Z0-9_-]+)/g
+  const classNames = []
 
-  // ------------------------------
-  '.vertical-lr': {
-    writingMode: 'vertical-lr',
-  },
-  '.vertical-rl': {
-    writingMode: 'vertical-rl',
-  },
+  let match
+  while ((match = regex.exec(`${components + utils}`)) !== null) {
+    classNames.push(match[1])
+  }
 
-  // ------------------------------
-  '.font-feature-jp': {
-    fontFeatureSettings: `"palt" 1, "jp90"`,
-  },
+  const keys = classNames.map((i) => `.${i}`)
+  const values = classNames.map((i) => {
+    return {}
+  })
+  return zipObject(keys, values)
 }

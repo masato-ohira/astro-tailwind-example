@@ -2,6 +2,11 @@
   .btn {
     @apply animate-none;
   }
+
+  .vstack {
+    @apply flex flex-col items-start gap-2;
+  }
+
   .hstack {
     @apply flex flex-wrap flex-row items-center gap-2;
   }

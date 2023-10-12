@@ -4,6 +4,9 @@
   "config": {
     "base": "app-name"
   },
+  "volta": {
+    "node": "18.12.1"
+  },
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",
     "ssg": "astro build",
