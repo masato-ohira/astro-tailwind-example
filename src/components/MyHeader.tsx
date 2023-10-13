@@ -15,8 +15,8 @@ export const MyHeader = () => {
         'hstack',
         'justify-between',
         'p-4',
-        // 'bg-primary',
-        'bg-cyan-600',
+        'bg-primary',
+        // 'bg-cyan-600',
         'text-white',
       )}
     >

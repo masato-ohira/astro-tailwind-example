@@ -10,7 +10,12 @@ export default {
     files: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   },
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        body: ['Roboto', 'Noto Sans JP', 'sans-serif'],
+        display: ['Oswald', 'Noto Sans JP', 'sans-serif'],
+      },
+    },
     container: {
       center: true,
     },
@@ -19,15 +24,15 @@ export default {
     themes: [
       {
         mytheme: {
-          primary: '#319795',
-          secondary: '#2B6CB0',
+          primary: '#60bb46',
+          secondary: '#2c5c9a',
           accent: '#805AD5',
-          neutral: '#3D4451',
+          neutral: '#333',
           'base-100': '#FFFFFF',
           info: '#00b5d8',
           success: '#38A169',
-          warning: '#ecc94b',
-          error: '#e53e3e',
+          warning: '#eda629',
+          error: '#ea2b00',
         },
       },
     ],
