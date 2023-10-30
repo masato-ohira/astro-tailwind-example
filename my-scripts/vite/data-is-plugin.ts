@@ -21,7 +21,7 @@ export const dataIsPlugin = () => {
           // インポートしたtsxコンポーネントのタグにdata-testid属性を追加する
           const componentId = split(id, '/').reverse()[0].replace('.tsx', '')
           const flag = `return /* @__PURE__ */ _jsx`
-          const blankTag = `return /* @__PURE__ */ _jsx(_Fragment`
+          const blankTag = `(_Fragment`
 
           let codes = split(code, '\n')
 
