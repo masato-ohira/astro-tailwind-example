@@ -6,9 +6,11 @@ type Props = {
   body: string
 }
 
+import { getName } from '@/utils/getName'
+
 export const MyBox = (props: Props) => {
   return (
-    <div>
+    <div data-is={getName(import.meta)}>
       <img src='{}' alt='' />
       <dl>
         <dt>{props.title}</dt>

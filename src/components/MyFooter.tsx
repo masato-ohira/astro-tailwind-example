@@ -1,9 +1,10 @@
+import { getName } from '@/utils/getName'
 import { tw } from '@/utils/tw'
-import React from 'react'
 
 export const MyFooter = () => {
   return (
     <div
+      data-is={getName(import.meta)}
       className={tw(
         //
         'text-center',

@@ -21,8 +21,8 @@
       "@@/*": ["./*"],
       "@ui/*": ["./src/components/shadcn-ui/ui/*"]
     },
-    "jsxImportSource": "react",
-    "importsNotUsedAsValues": "error"
+    "jsxImportSource": "react"
+    // "importsNotUsedAsValues": "error"
   },
 
   "include": [

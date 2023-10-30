@@ -1,3 +1,4 @@
+import { getName } from '@/utils/getName'
 import { tw } from '@/utils/tw'
 import { FaReact } from 'react-icons/fa'
 
@@ -10,6 +11,7 @@ export const MyHeader = () => {
   ]
   return (
     <div
+      data-is={getName(import.meta)}
       className={tw(
         //
         'hstack',

@@ -9,10 +9,5 @@ import tailwind from '@astrojs/tailwind'
 export default defineConfig({
   integrations: [react(), tailwind()],
   base: `/${config.base}`,
-  vite: {
-    ssr: {
-      external: ['react-icons'],
-    },
-    plugins: [dataIsPlugin()],
-  },
+  server: { port: 3000 },
 })
