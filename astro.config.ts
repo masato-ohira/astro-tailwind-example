@@ -10,4 +10,9 @@ export default defineConfig({
   integrations: [react(), tailwind()],
   base: `/${config.base}`,
   server: { port: 3000 },
+  vite: {
+    ssr: {
+      noExternal: ['react-icons'],
+    },
+  },
 })
